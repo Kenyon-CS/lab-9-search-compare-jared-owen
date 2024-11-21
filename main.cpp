@@ -97,11 +97,11 @@ int main() {
     }
 
     // Display table headers
-    std::cout << "Search"
-              << "Found"
-              << "Seq. search"
-              << "Bin search"
-              <<"Enhanced search" << "\n";
+    std::cout << "Search    "
+              << "Found    "
+              << "Seq.search    "
+              << "Bin search    "
+              <<"Enhanced search    " << "\n";
 
     // Process each random key
     for (int key : randomKeys) {
@@ -120,10 +120,10 @@ int main() {
         int foundValue = (seqIndex != -1) ? vec[seqIndex] : -1;
 
         // Print results for this key
-        std::cout << key
-                  << foundValue
-                  << numCmpSeq
-                  << numCmpBin
+        std::cout << key << "       "
+                  << foundValue << "    "
+                  << numCmpSeq << "             "
+                  << numCmpBin << "             "
                   << numCmpEnhanced << "\n";
     }
 
